@@ -3,9 +3,9 @@
 $(window).scroll(function() {scrollFunction()});
 function scrollFunction() {
   var windscroll = $(window).scrollTop();
-  if ($(window).scrollTop() > 20 || document.documentElement.scrollTop > 20) {
-    $("nav").css
+  if (windscroll >= 30) {
+    $("nav").css("top", "0");
   } else {
-    $("nav").style.top = "-50px";
+    $("nav").css("top", "-50px");
   }
 }
