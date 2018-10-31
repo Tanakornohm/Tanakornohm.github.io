@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit|Varela+Round');
+*{
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    color: #232323;
+    font-size: 1.2rem;
+}
+.health_form{
+    text-align: center;
+}
+input[type="number"]{
+    width: 100%;
+}
+.ioform{
+    display: block;
+    margin: 20px;
+}
