@@ -2,8 +2,11 @@
 *{
     font-family: 'Varela Round', sans-serif;
     font-family: 'Kanit', sans-serif;
-    color: #232323;
-    font-size: 1.2rem;
+    /* color: #232323; */
+    /* font-size: 1.2rem; */
+}
+body{
+    margin: 0;
 }
 .health_form{
     text-align: center;
@@ -14,4 +17,59 @@ input[type="number"]{
 .ioform{
     display: block;
     margin: 20px;
+}
+ul {
+    list-style-type: none;
+  }
+header.masthead {
+    background: url('../img/food_banner.jpg') no-repeat center center fixed;  /*fixed*/
+    height: 40%;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    background-size: cover;
+    -o-background-size: auto;
+}
+header.masthead>.overlay {
+    padding: 20rem 0;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    height: 35%;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+baner.li {
+    margin: 2%;
+}
+nav {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the nav 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the nav links */
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
 }
