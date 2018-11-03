@@ -6,7 +6,6 @@
     /* font-size: 1.2rem; */
 }
 body{
-    overflow-x: hidden;
     margin: 0;
 }
 .health_form{
@@ -27,7 +26,7 @@ input[type="submit"]{
     height: auto;
     padding: 0.5% 2%;
     color: #e5e5e5;
-    background: #232323;
+    background: #00a6f8;
     font-size: 1.05rem;
     border-radius: 5% 5% 5% 5%;
     border: none;
@@ -133,12 +132,3 @@ h3 {
     float: left;
 }
 
-.group {
-    width: 100%;
-    text-align: center;
-    background-color: black;
-}
-
-.btn-group .button:hover {
-    background-color: #3e8e41;
-}

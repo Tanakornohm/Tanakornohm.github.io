@@ -55,7 +55,7 @@ body {
     float: left;
     width: 25%;
     margin: auto;
-    height: 450px; /* Should be removed. Only for demonstration */
+    height: 380px; /* Should be removed. Only for demonstration */
     text-align: center;
     box-sizing: border-box;
     text-align: justify;
