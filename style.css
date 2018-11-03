@@ -45,6 +45,7 @@ body {
     height: 420px; /* Should be removed. Only for demonstration */
     text-align: center;
     box-sizing: border-box;
+    text-align: justify;
 
 
 }
