@@ -7,12 +7,8 @@ function scrollFunction() {
     $("nav").css("top", "-50px")
   }
 }
+calculate()
 function calculate(){
-    let age = parseInt($("#age").val())
-    let height = parseInt($("#height").val())
-    let weight = parseInt($("#weight").val())
-    let activity = parseFloat($("#activity option:selected").attr('data-val'))
-    let gender = $('input[name=gender]:checked').val()
     console.log("gender : "+gender);
     console.log("age : "+age);
     console.log("height : "+height);

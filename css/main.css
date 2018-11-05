@@ -131,4 +131,64 @@ h3 {
     cursor: pointer;
     float: left;
 }
-
+.card_box{
+    display: inline-block;
+    margin: 3% 3%;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+}
+.card_box img{
+    width: 350px;
+    height:200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    justify-content: center;
+}
+.overlay_card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .35s ease;
+    background-color: #008CBA;
+    border-radius: 5px;
+}
+  
+.overlay_card:hover {
+    opacity: 0.85;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text a{
+    text-decoration: none;
+    color: #fff;
+}
+.card_row .head_card{
+    width: 250px;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 2vw;
+    margin: 50px auto;
+    padding: 8px 8px;
+    border-radius: 50px;
+    background: #4CAF50; 
+}

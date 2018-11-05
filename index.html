@@ -18,16 +18,13 @@
                 <h1 id="txt">HEALTHY</h1>
                 <h2>สาระ เกร็ดน่ารู้ ต่างๆเกี่ยวกับสุขภาพ ไม่ว่าจะเป็น อาหาร วิธีออกกำลังกาย รวมถึงการคุมน้ำหนัก</h2>
             </div>
-            <!-- overlay -->
     </header>
-
-
 <br>
     <div class="container">
-        <section class="health_form">
+        <form class="health_form" method="POST" action="health_info.php">
             <h2>ตรวจสุขภาพของคุณ</h2>
             <div class="ioform">
-                    <label for="age"> เพศ : </label>
+                    <label for="gender"> เพศ : </label>
                     <input type="radio" name="gender" value="male"> ชาย
                     <input type="radio" name="gender" value="female"> หญิง
             </div>
@@ -53,43 +50,55 @@
                     <option value="1.9" data-val="1.9">ออกกำลังกายวันละ 2 ครั้งขึ้นไป</option>
                 </select>
             </div>
-            <input type="submit" onclick="calculate()" value="submit">
-        </section>
-        <section class="ans">
-            <div class="info_health">
-                <h3>BMI (ค่าดัชนีมวลกาย)</h3>
-                <p>อัตราส่วนระหว่างน้ำหนักต่อส่วนสูง ที่ใช้บ่งว่าอ้วนหรือผอม ในผู้ใหญ่ตั้งแต่อายุ 20 ปีขึ้นไป ความสำคัญของการรู้ค่าดัชนีมวลร่างกาย เพื่อดูอัตราการเสี่ยงต่อการเกิดโรคต่างๆ ถ้าค่าที่คำนวนได้ มากหรือน้อยเกินไป เพราะถ้าเป็นโรคอ้วนแล้ว จะมีภาวะเสี่ยงต่อการเป็นโรคความดันโลหิตสูง โรคเบาหวาน โรคหัวใจขาดเลือด และโรคนิ่วในถุงน้ำดี แต่ในขณะเดียวกัน ผู้ที่ผอมเกินไป ก็จะเสี่ยงต่อการติดเชื้อ ประสิทธิภาพในการทำงานของร่างกายลดลง ดังนั้นควรรักษาระดับน้ำหนักให้อยู่ในเกณฑ์ปกติ</p>
+            <input type="submit" value="submit">
+        </form>
+        <section class="card_row">
+            <h1 class="head_card">อาหาร 5 หมู่</h1>
+            <div class="card_box">
+                <img src="img/food_banner.jpg">
+                <a href="">
+                    <div class="overlay_card">
+                            <div class="text">อ่านเพิ่มเติม...</div>
+                    </div>
+                </a>
+                <h1>หมู่ที่ 1 โปรตีน</h1>
             </div>
-            <div class="ans_health bmi">
-                <h1>BMI</h1>
-                <h2>0</h2>
-                <p></p>
+            <div class="card_box">
+                    <img src="img/food_banner.jpg">
+                    <a href="">
+                        <div class="overlay_card">
+                                <div class="text">อ่านเพิ่มเติม...</div>
+                        </div>
+                    </a>
+                    <h1>หมู่ที่ 2 โปรตีน</h1>
+                </div>
+            <div class="card_box">
+                <img src="img/food_banner.jpg">
+                <a href="">
+                    <div class="overlay_card">
+                            <div class="text">อ่านเพิ่มเติม...</div>
+                    </div>
+                </a>
+                <h1>หมู่ที่ 3 โปรตีน</h1>
             </div>
-        </section>
-        <section class="ans">
-                <div class="info_health">
-                    <h3>Basal Metabolic Rate (BMR)</h3>
-                    <p>อัตราการความต้องการเผาผลาญของร่างกายในชีวิตประจำวัน หรือจำนวนแคลอรี่ขั้นต่ำที่ต้องการใช้ในชีวิตแต่ละวัน ดังนั้นการคำนวณ BMR จะช่วยให้คุณคำนวณปริมาณแคลอรี่ที่ใช้ต่อวันเพื่อรักษาน้ำหนักปัจจุบันได้ และเมื่ออายุมากขึ้นเราจะควบคุมน้ำหนักได้ยากขึ้น เพราะ BMR เราลดลง การอดอาหารก็เป็นสาเหตุหนึ่งที่ทำให้ BMR ลดลง วิธีป้องกันคือ "หมั่นออกกำลังกาย" เพื่อเพิ่มประสิทธิภาพของการเผาผลาญ ซึ่งจะทำให้ BMR ไม่ลดลงเร็วเกินไป</p>
-                </div>
-                <div class="bmr ans_health">
-                    <h1>BMR</h1>
-                    <h2>0</h2>
-                </div>
-        </section>
-        <section class="ans">
-                <div class="info_health">
-                    <h3>TDEE (Total Daily Energy Expenditure)</h3>
-                    <p>ค่าของพลังงานที่ใช้ทั้งหมดในแต่ละวัน เมื่อมีการทำกิจกรรมต่างๆ</p>
-                    <p>ค่า TDEE นี้นั่นสามารถนำไปใช้ฟิตหุ่นเพื่อลดน้ำหนัก(ลดไขมัน) หรือเพิ่มน้ำหนัก (เพิ่มกล้ามเนื้อ) เพื่อเพิ่มทรวดทรงให้ดูสมส่วนมากขึ้นก็ได้</p>
-                    <ul>
-                        <li>ต้องการฟิตหุ่น ลดไขมัน TDEE - 500</li>
-                        <li>ต้องการเพิ่มน้ำหนัก(กล้ามเนื้อ) TDEE + 500</li>
-                    </ul>
-                </div>
-                <div class="tdee ans_health">
-                    <h1>TDEE</h1>
-                    <h2>0</h2>
-                </div>
+            <div class="card_box">
+                <img src="img/food_banner.jpg">
+                <a href="">
+                    <div class="overlay_card">
+                            <div class="text">อ่านเพิ่มเติม...</div>
+                    </div>
+                </a>
+                <h1>หมู่ที่ 4 โปรตีน</h1>
+            </div>
+            <div class="card_box">
+                <img src="img/food_banner.jpg">
+                <a href="">
+                    <div class="overlay_card">
+                            <div class="text">อ่านเพิ่มเติม...</div>
+                    </div>
+                </a>
+                <h1>หมู่ที่ 5 โปรตีน</h1>
+            </div>
         </section>
     </div>
     <footer></footer>
