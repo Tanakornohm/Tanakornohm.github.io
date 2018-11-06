@@ -26,7 +26,7 @@ input[type="submit"]{
     height: auto;
     padding: 0.5% 2%;
     color: #e5e5e5;
-    background: #232323;
+    background: #00a6f8;
     font-size: 1.05rem;
     border-radius: 5% 5% 5% 5%;
     border: none;
@@ -34,9 +34,9 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     color: #fff;
-    background: #2ac94a;
-    box-shadow: 0px 4px #15912e;
-}
+    background: #6AD4FA;
+/*    box-shadow: 0px 4px #blue;
+*/}
 
 .ioform{
     display: block;
@@ -46,7 +46,7 @@ ul {
     list-style-type: none;
   }
 header.masthead {
-    background: url('../img/food_banner.jpg') no-repeat center center fixed;  /*fixed*/
+    background: url('../img/banner.jpg') no-repeat center center fixed;  /*fixed*/
     height: 40%;
     -webkit-background-size: auto;
     -moz-background-size: auto;
@@ -54,11 +54,18 @@ header.masthead {
     -o-background-size: auto;
 }
 header.masthead>.overlay {
-    padding: 20rem 0;
+    padding: 10rem 0;
     text-align: center;
     color: #fff;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.40);
     height: 35%;
+}
+#txt {
+    font-size: 7em;
+
+}
+#pa1 {
+    font-size: 3em;
 }
 /* .button {
     background-color: #4CAF50;
@@ -72,26 +79,13 @@ header.masthead>.overlay {
     margin: 4px 2px;
     cursor: pointer;
 } */
-nav {
-    background-color: #333;
-    position: fixed;
-    top: -50px;
-    width: 100%;
-    transition: top 0.3s; 
-}
-nav a {
-    /* float: center; */
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
+
+
+#txt2 {
+    padding-top: 10px;
+    font-size: 1.25em;
 }
 
-nav a:hover {
-    background-color: #ddd;
-    color: #232323;
-}
 .container{
     margin: 2% 2%;
     width: 100%;
@@ -99,7 +93,7 @@ nav a:hover {
 }
 .ans{
     width: 80%;
-    background: #e5e5e5;
+    background: url('../img/leaves-pattern.png');
     color: #232323;
     margin: 2% auto;
     padding: 1%;
@@ -107,3 +101,170 @@ nav a:hover {
 .ans_health{
     text-align: center;
 }
+
+.info_health {
+    padding: 30px;
+}
+h3 {
+    font-size: 2em;
+}
+
+.btn-group .button {
+    text-align: center;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.f1 img{
+
+    width: 250px;
+    height: 250px;
+    border-radius: 300px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+}
+.f1 p {
+    font-size: 1.2em;
+}.f1 a{
+}
+.framy {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+
+    background-color: whitesmoke;
+}
+
+.rowone, .rowtwo, .rowthree {
+    padding: 30px;
+    text-align: left;
+
+} .rowone img, .rowtwo img, .rowthree img {
+    border-radius: 15px;
+    margin-left: 100px;
+} .rowone h1, .rowtwo h1, .rowthree h1{
+    font-size: 2em;
+    font-weight: 50px;
+
+} #con-1 {
+    padding-bottom: 40px;
+}
+
+.row {
+
+    /*
+    border-width: 1.5px;
+    border-style:solid;
+    border-color:black;*/
+
+}
+
+#top-1 {
+    color: #635d5d;
+    padding: 60px;
+}
+
+#top-01 p {
+
+    font-size: 2.5em;
+    color: black;
+}
+
+#top-01 {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 30px;
+}
+
+#conic {
+    position: absolute;
+/*    top: -20px;
+*/    /*right: -10px;*/
+    padding-left: 20px;
+}
+
+.food {
+
+    background-color: whitesmoke;
+}
+
+.food img, .foody img {
+    border-radius: 20px;
+}
+
+
+.foody {
+    background-color: white;
+}
+
+.card_box{
+    display: inline-block;
+    margin: 3% 3%;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+}
+.card_box img{
+    width: 350px;
+    height:200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    justify-content: center;
+}
+.overlay_card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .35s ease;
+    background-color: #008CBA;
+    border-radius: 5px;
+}
+  
+.overlay_card:hover {
+    opacity: 0.85;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text a{
+    text-decoration: none;
+    color: #fff;
+}
+.card_row .head_card{
+    width: 300px;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 2vw;
+    margin: 50px auto;
+    padding: 8px 8px;
+    border-radius: 50px;
+    background: #4CAF50; 
+}
+

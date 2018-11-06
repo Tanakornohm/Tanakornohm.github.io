@@ -1,12 +1,4 @@
-$(window).scroll(function() {scrollFunction()})
-function scrollFunction() {
-  let windscroll = $(window).scrollTop()
-  if (windscroll >= 100) {
-    $("nav").css("top", "0")
-  } else {
-    $("nav").css("top", "-50px")
-  }
-}
+
 function calculate(){
     let age = parseInt($("#age").val())
     let height = parseInt($("#height").val())
