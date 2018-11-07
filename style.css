@@ -1,0 +1,234 @@
+
+body {
+    font-family: 'Kanit', sans-serif;
+
+}
+
+/* Style the header */
+.header {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+    box-sizing: border-box;
+
+}
+
+.header2 {
+    width: 100%;
+    background: url('img/banner2.jpg');
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+/*    box-sizing: border-box;
+*/    color: white;
+    height:  400px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 60px;
+    height: 400px; /* Should be removed. Only for demonstration */
+    text-align: center;
+    box-sizing: border-box;
+
+
+}
+
+.column-ar {
+    float: left;
+    width: 50%;
+    padding: 60px;
+    height: 420px; /* Should be removed. Only for demonstration */
+    text-align: center;
+    box-sizing: border-box;
+    text-align: justify;
+
+
+}
+
+.column-frame {
+    font-size: 1em;
+    float: left;
+    width: 25%;
+    margin: auto;
+    height: 380px; /* Should be removed. Only for demonstration */
+    text-align: center;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 40px;
+}
+
+.column-frame p  {
+  text-indent: 30px;
+    padding-left: 10px;
+}
+
+
+#f_one {
+    padding-top: 30px;
+}
+
+.framepic {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#framepic2 {
+    padding-left: 12px;
+    padding-right: 10px;
+}
+
+
+.column1 {
+    font-size: 1.15em;
+    float: left;
+    width: 50%;
+    padding: 60px;
+    height: 500px; /* Should be removed. Only for demonstration */
+    text-align: center;
+    box-sizing: border-box;
+     text-align: justify;
+
+}
+
+.column2 {
+    text-align: center;
+    float: left;
+    width: 32%;
+    margin-left: auto;
+    height: 500px; /* Should be removed. Only for demonstration */
+}
+
+.column2 p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.column2 ul, li {
+    padding-left: 10px;
+    padding-right: 12px;
+    text-align: left;
+}
+
+.row img {
+    border-radius: 20px;
+
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+
+}
+
+#p1 {
+    letter-spacing: 2px;
+}
+
+
+
+/*// forhover*/
+
+.container {
+  position: relative;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 204, 255, 0.411);
+  border-radius: 20px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+/*  text-shadow: 0px 2px #000000;
+*/
+}
+
+.group {
+    width: 100%;
+    text-align: center;
+    padding: 40px 40px;
+} 
+
+.group button {
+    background-color: #1EBCF4; 
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 140px;
+    height: 60px;
+    border-radius: 12px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.group button:hover {
+    background-color: #1791BC;
+}
+
+nav {
+    background-color: #333;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    transition: top 0.3s; 
+    z-index: 1;
+}
+nav a {
+    /* float: center; */
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: #232323;
+}
